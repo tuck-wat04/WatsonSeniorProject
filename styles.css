@@ -1,3 +1,7 @@
-body {"
- background-color: green;
-"}
+body {
+ background-color: #60ff33;
+}
+h1 {
+  color: Aqua;
+  text-align: center;
+}
