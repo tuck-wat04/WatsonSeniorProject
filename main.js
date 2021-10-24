@@ -1,22 +1,22 @@
 class MyHeader extends HTMLElement {
   ConnectedCallback() {
-    this.innerHTML='
+    this.innerHTML = '
     <header>
     <a href="index.html">
     <img src="#"></a>
     <nav>
     <ul>
-    <li><a href="index.html"></li>
-    <li><a href="index.html"></li>
-    <li><a href="index.html"></li>
-    <li><a href="index.html"></li>
+    <li><a href="index.html">Breakfast</a></li>
+    <li><a href="index.html">Lunch</a></li>
+    <li><a href="index.html">Dinner</a></li>
+    <li><a href="index.html">Desserts</a></li>
     </ul>
     </nav>
     </header>
     '
   }
 }
-customElements.define(my-header, MyHeader)
+customElements.define('my-header', MyHeader)
 
 class MyFooter extends HTMLElement {
   ConnectedCallback() {
@@ -27,4 +27,4 @@ class MyFooter extends HTMLElement {
     '
   }
 }
-customElements.define(my-footer, MyFooter)
+customElements.define('my-footer', MyFooter)
