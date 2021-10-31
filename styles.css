@@ -8,30 +8,68 @@ h1 {
   font-family: Bradley Hand, cursive;
 
 }
+
 /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #000000;
-  overflow: hidden;
-}
+nav {
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          background-color:  #003057;
+        }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+        ul {
+          padding: 0;
+        }
+        /* Style the links inside the navigation bar */
+        a {
+          font-weight: 700;
+          margin: 0 25px;
+          color: #fff;
+          text-decoration: none;
+        }
+        /* Change the color of links on hover */
+        a:hover {
+          padding-bottom: 5px;
+          box-shadow: inset 0 -2px 0 0 #fff;
+        }
+        /* Add a color to the active/current link */
+        a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #003057;
+    color: #fff
+        }
+
+
+* {
+  box-sizing: border-box;
+
+}
+.column {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  width: 45%;
+  padding: 10px;
+  height: 400px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #d1d1d4;
-  color: black;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA60;
-  color: white;
+div {
+  margin-left: 10px;
 }

@@ -1,30 +1,35 @@
-class MyHeader extends HTMLElement {
-  ConnectedCallback() {
-    this.innerHTML = '
-    <header>
-    <a href="index.html">
-    <img src="#"></a>
-    <nav>
-    <ul>
-    <li><a href="index.html">Breakfast</a></li>
-    <li><a href="index.html">Lunch</a></li>
-    <li><a href="index.html">Dinner</a></li>
-    <li><a href="index.html">Desserts</a></li>
-    </ul>
-    </nav>
-    </header>
-    '
+class Header extends HTMLElement {
+  constructor() {
+    super();
   }
-}
-customElements.define('my-header', MyHeader)
 
-class MyFooter extends HTMLElement {
-  ConnectedCallback() {
-    this.innerHTML='
-    <footer>
-    © 2021 Tucker Watson
-    </footer>
-    '
+  connectedCallback() {
+    this.innerHTML = `
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="meals.html">Meals</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    `;
   }
 }
-customElements.define('my-footer', MyFooter)
+
+customElements.define('my-header', Header);
+
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
+    <footer>
+    <p>© 2021 Tucker Watson   &nbsp; Email: <a href="mailto:tuckerwatson09@gmail.com">tuckerwatson09@gmail.com</a></p>
+    </footer>
+    `;
+  }
+}
+
+customElements.define('my-footer', Footer);
