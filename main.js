@@ -26,7 +26,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer>
-    <p>© 2021 Tucker's Recipe Guide</p>
+    <p>©2021 Tucker's Recipe Guide</p>
     </footer>
     `;
   }

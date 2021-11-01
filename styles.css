@@ -4,9 +4,12 @@ body {
 h1 {
   color: black;
   text-align: center;
-  text-decoration: underline;
   font-family: Bradley Hand, cursive;
 
+}
+
+h2 {
+  font-family: Marker Felt, fantasy;
 }
 
 /* Add a black background color to the top navigation */
